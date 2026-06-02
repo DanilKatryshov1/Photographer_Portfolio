@@ -1,11 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <title>Document</title>
+
 </head>
+
 <body>
-    <h1>Старт!</h1>
+
+    <nav class="navbar navbar-expand-lg  container-style">
+        <div class="container-fluid ">
+            <a class="navbar-brand logo-block" href="#">
+                <span class="logo-title"><span class="first-letter">K</span>amil <span
+                        class="first-letter">R</span>adjabov</span>
+                <span class="logo-subtitle">photographer</span>
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Закрыть"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul
+                        class="navbar-nav justify-content-end flex-grow-1 mx-auto  pe-0 text-center text-lg-start gap-lg-5 gap-md-3 nav-fonts">
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#gallery">Портфолио</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Стоимость</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#">Магазин</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- слайдер -->
+
+    <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active " data-bs-interval="15000">
+                <img src="https://sun9-54.userapi.com/s/v1/ig2/t23IDYrbuuF5Ce2mrV-vdLDOaToHXSnMdvIrJp55Vy1s7B8iK9fvOYcmHt0diWP-G7L_IC1eH8HyM1rouRrFfx9H.jpg?quality=95&as=32x21,48x32,72x48,108x72,160x106,240x160,360x239,480x319,540x359,640x426,720x479,1080x718,1280x851,1440x958,1600x1064&from=bu&u=ZxWRyh45yC-From2UYUNQa1p-jLO6IQV0BLXRU_MBGQ&cs=1600x0" class="d-block slider-img" alt="...">
+                <!-- <div class="carousel-caption d-none d-md-block">
+      <h5>Портфолио фотографа</h5>
+        <p>Свадебная и репортажная съемка премиум-класса.</p>
+    </div> -->
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://sun9-41.userapi.com/s/v1/ig2/p_cMEPZf3dl7Jteo7HU7zAQWT4HdHcpM_Mxk8qVAszV4o5BG_54-FUCiatvGGPK7poHEMmbt7u__JP67eTk5EFSn.jpg?quality=95&as=32x21,48x32,72x48,108x72,160x106,240x160,360x239,480x319,540x359,640x426,720x479,1080x718,1280x851,1440x958,1600x1064&from=bu&u=9_02AmDbYahgpL5E3vivKt2QqQeiyKRSZllOfuP_wXI&cs=1600x0" class="d-block slider-img" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://sun9-30.userapi.com/s/v1/ig2/UTc8g2GUhJad7iFK1YpUR2dapzASAb4iAGy1X3jsaKHZMJOKAdten1RQXio03npBwodc3J8FNR0WsLzc6Hkvwdtc.jpg?quality=95&as=32x22,48x32,72x49,108x73,160x108,240x162,360x243,480x325,540x365,640x433,720x487,1080x730,1280x866,1440x974,1600x1082&from=bu&u=5mbuF7-rE826sz317DgD1K9tLhIco34CwlmdJU9y-sY&cs=1600x0" class="d-block slider-img" alt="...">
+            </div>
+        </div>
+
+    </div>
+    <div class="text-decoration-title" id="gallery"><span class="first-letter">И</span>стории в <span class="first-letter">к</span>адрах</h2> </div>
+<section class="py-1">
+
+        
+        <div class="row g-4 justify-content-center">
+            
+            <div class="col-12 col-md-6 col-lg-4  ">
+                <a href="#"  class="gallery-link">
+                    <div class="gallery-item">
+                        <img src="https://sun9-13.userapi.com/s/v1/ig2/bOHs3kfGAgUmNonNLSQKcX2hLF4F7QfJ1AxC54ekNOpXfgYw8sLMAXcLPgz0minLon39nIHRb9DQWYD1QfQ3jOhk.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1621,1280x1921,1440x2161,1706x2560&from=bu&u=Iw2Tg0mcpFBJo40PERX4z0iJYbXjnWZANW3uNBNxCsI&cs=1706x0" class="img-fluid gallery-img" alt="Истории в кадрах 1">
+                    <div class="gallery-overlay">
+                <span class="overlay-text">Смотреть серию</span>
+            </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 ">
+                <a href="#" class="gallery-link">
+                    <div class="gallery-item">
+                        <img src="https://sun9-38.userapi.com/s/v1/ig2/qoYr_1m_4wfLON8FrHA9N8sNmMFV4iByAQ1AIVNRizAeUBNqI1TBGBASyjHi_BiqA8ZJmgN4S4VTsKwYruUFtUVK.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x241,240x361,360x541,480x722,540x812,640x962,720x1083,1064x1600&from=bu&cs=1064x0" class="img-fluid gallery-img" alt="Истории в кадрах 2">
+                    <div class="gallery-overlay">
+                <span class="overlay-text">Смотреть серию</span>
+            </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 ">
+                <a href="#" class="gallery-link">
+                    <div class="gallery-item">
+                        <img src="https://sun9-23.userapi.com/s/v1/ig2/4HiopebYujYRsGMghtJlbHoiND6cHg6CHu5QzrsB8oxNPwiB_26FONvr5nThH3jLGVCLax5uGvH6MnDXtoxhPTBv.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x961,720x1081,1066x1600&from=bu&u=n5kxE4MmbQ7j18wfOgMMcfqtLqR9zCBhwxm-7wHtnm4&cs=1066x0" class="img-fluid gallery-img" alt="Истории в кадрах 3">
+                    <div class="gallery-overlay">
+                <span class="overlay-text">Смотреть серию</span>
+            </div>
+                    </div>
+                </a>
+            </div>
+
+   
+            
+            <div class="col-12 col-md-6 col-lg-4 ">
+                <a href="#" class="gallery-link">
+                    <div class="gallery-item">
+                        <img src="https://sun9-82.userapi.com/s/v1/ig2/mrRBbQQYrxHe3GGeXdY8vTVrsXoGPKElz3_VQUTq45cQkfCqMjJJzivo-wXRJil1jVSgVUMFq7spURg7nFgLL6vr.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x361,360x541,480x721,540x811,640x961,720x1082,1065x1600&from=bu&u=HdAVP1ly2dymU9QueX2BAlhCknbvlFlOQXC7dDfBbds&cs=1065x0" class="img-fluid gallery-img" alt="Истории в кадрах 4">
+                    <div class="gallery-overlay">
+                <span class="overlay-text">Смотреть серию</span>
+            </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 ">
+                <a href="#" class="gallery-link">
+                    <div class="gallery-item">
+                        <img src="https://sun9-5.userapi.com/s/v1/ig2/Se1qrXBBGo81_9_7MZ3z1hYsD6-fm4aDceY3ZEsTfFas8xtJ9IIQNar1GyrHeFTJfYEhAp-ZxMSzkpKJZbII8_yf.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x241,240x361,360x541,480x722,540x812,640x962,720x1083,1064x1600&from=bu&u=QEHnT0oheEX3AIcgCH4expqwwpmOE2TuibNvIr1HoVk&cs=1064x0" class="img-fluid gallery-img" alt="Истории в кадрах 5">
+                    <div class="gallery-overlay">
+                <span class="overlay-text">Смотреть серию</span>
+            </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 ">
+                <a href="#" class="gallery-link">
+                    <div class="gallery-item">
+                        <img src="https://sun9-38.userapi.com/s/v1/ig2/qoYr_1m_4wfLON8FrHA9N8sNmMFV4iByAQ1AIVNRizAeUBNqI1TBGBASyjHi_BiqA8ZJmgN4S4VTsKwYruUFtUVK.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x241,240x361,360x541,480x722,540x812,640x962,720x1083,1064x1600&from=bu&cs=1064x0" class="img-fluid gallery-img" alt="Истории в кадрах 6">
+                    <div class="gallery-overlay">
+                <span class="overlay-text">Смотреть серию</span>
+            </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    
+
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
