@@ -67,7 +67,20 @@
     .navbar-nav .nav-link.active {
         border-bottom: none !important;
     }
+    .border-end-md {
+        border-end: 1px solid rgba(0, 0, 0, 0.1); /* Вертикальная черта справа от первой колонки */
+    }
 }
+
+/* Эффект при наведении на ссылку-кнопку */
+.hover-line {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.hover-line:hover {
+    opacity: 0.7;
+    transform: translateX(3px);
+}
+
 
 /* ==========================================================================
    4. ГОРИЗОНТАЛЬНЫЕ СМАРТФОНЫ (меньше 576px)

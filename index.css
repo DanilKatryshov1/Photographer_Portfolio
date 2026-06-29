@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..700&family=Monsieur+La+Doulaise&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..700&family=Monsieur+La+Doulaise&display=swap');
 
+html {
+    scroll-behavior: smooth; 
+}
+
+
+
 
 
    /* ==========================================================================
@@ -215,6 +221,43 @@ background-color: #d9d9d9
 
 
 
+/* Базовые настройки сетки Masonry */
+.gallery-pinterest-mesh {
+    column-count: 3;        /* 3 колонки для больших экранов компьютера */
+    column-gap: 24px;       /* Элегантный отступ между колонками */
+}
+
+/* Настройки для ссылок-оберток картинок */
+.gallery-pinterest-mesh a {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 8px;     /* Небольшой зазор снизу под каждым кадром */
+    text-decoration: none;
+}
+
+/* Плавное легкое проявление при наведении для дорогого эффекта */
+.gallery-pinterest-mesh img {
+    transition: opacity 0.3s ease;
+}
+
+.gallery-pinterest-mesh a:hover img {
+    opacity: 0.85;          /* Картинка чуть смягчается при наведении перед кликом */
+}
+
+/* Адаптивность под планшеты */
+@media (max-width: 992px) {
+    .gallery-pinterest-mesh {
+        column-count: 2;    /* Перестраиваем в 2 колонки */
+        column-gap: 16px;
+    }
+}
+
+/* Адаптивность под мобильные телефоны */
+@media (max-width: 576px) {
+    .gallery-pinterest-mesh {
+        column-count: 1;    /* На телефонах фотки идут строго одна за другой */
+    }
+}
 
 
 
